@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About / Impact — VaporGuard</title>
+<meta name="description" content="Why the VaporGuard project exists, and the numbers behind its mission." />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><span class="dot"></span> VaporGuard</a>
+    <div class="nav-links">
+      <a href="problem.html">Problem</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="roi.html">ROI Calculator</a>
+      <a href="product.html">Product</a>
+      <a href="about.html" class="current">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="roi.html" class="btn btn-ghost">Try ROI Calculator</a>
+      <a href="contact.html" class="btn btn-primary">Request Demo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="crumbs">Home / About</div>
+    <div class="section-kicker" style="color:#8fd0e8">About / Impact</div>
+    <h1 class="page-hero-title">Why this project exists</h1>
+    <p class="page-hero-sub">The mission, in one paragraph, and the numbers behind it.</p>
+  </div>
+</header>
+
+<section class="section bg-white">
+  <div class="container about-grid reveal">
+    <div>
+      <p style="color:var(--muted)">India's fuel retail network has crossed 100,000 outlets, and nearly a third are rural — a segment the current vapor recovery mandate doesn't reach. VaporGuard exists to close that gap: protecting the people who work at these stations every day, and giving small station owners a financially self-justifying reason to adopt the same protection larger, newer stations already have.</p>
+      <p style="color:var(--muted)">The mission is simple: turn a mandatory pollution-control obligation into a savings story small station owners actually want to adopt.</p>
+    </div>
+    <div class="card">
+      <h4 style="font-size:1rem">At a glance</h4>
+      <div class="grid grid-2" style="margin-top:14px;">
+        <div><b style="font-size:1.4rem;color:var(--deep);font-family:Georgia,serif;">100k+</b><p style="font-size:.8rem;color:var(--muted);margin:0">addressable stations</p></div>
+        <div><b style="font-size:1.4rem;color:var(--teal);font-family:Georgia,serif;">29%</b><p style="font-size:.8rem;color:var(--muted);margin:0">rural, underserved</p></div>
+        <div><b style="font-size:1.4rem;color:var(--amber);font-family:Georgia,serif;">2</b><p style="font-size:.8rem;color:var(--muted);margin:0">capture stages in one unit</p></div>
+        <div><b style="font-size:1.4rem;color:var(--green);font-family:Georgia,serif;">75%</b><p style="font-size:.8rem;color:var(--muted);margin:0">assumed capture efficiency</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h5>VaporGuard</h5>
+        <p style="font-size:.84rem;max-width:280px;">AI-monitored retrofit vapor recovery and leak detection for small and rural fuel stations. Student project prototype.</p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <a href="problem.html">Problem</a><a href="roi.html">ROI Calculator</a>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <a href="product.html">Specifications</a><a href="dashboard.html">Dashboard</a><a href="contact.html">Request Demo</a>
+      </div>
+      <div>
+        <h5>Sources</h5>
+        <div class="sources-list">
+          Fuel station count &amp; rural share &mdash; industry data, Business Standard, Dec 2025.<br/>
+          NGT vapor recovery directive &mdash; Dec 2021, CPCB/SPCB.<br/>
+          Evaporative loss range &mdash; industry technical literature; Statistics Canada retail outlet study, 2009 (proxy).<br/>
+          Benzene health effects on Indian pump attendants &mdash; peer-reviewed occupational health studies.<br/>
+          VOC reduction / Delhi VRS pump count &mdash; vapor recovery market research, 2025.<br/>
+          Fuel prices &mdash; Goodreturns / CarDekho, 18 Aug 2026.<br/>
+          Hardware price, subscription price, capture efficiency &mdash; our own business/engineering assumptions.
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> VaporGuard &mdash; Student project prototype, not a registered company.</span>
+      <span>Built for MSME Idea Hackathon 6.0 &mdash; Energy Efficiency</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>

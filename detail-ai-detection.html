@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How The Anomaly Detection Actually Works — VaporGuard</title>
+<meta name="description" content="How an on-device model learns what 'normal' looks like at one specific station, and catches the moment something drifts away from it." />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><span class="dot"></span> VaporGuard</a>
+    <div class="nav-links">
+      <a href="problem.html" class="current">Problem</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="roi.html">ROI Calculator</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="roi.html" class="btn btn-ghost">Try ROI Calculator</a>
+      <a href="contact.html" class="btn btn-primary">Request Demo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="crumbs">Home / Problem, Solution &amp; Benefits / AI Leak & Anomaly Detection</div>
+    <div class="section-kicker" style="color:#8fd0e8">Our Solution — Deep Dive</div>
+    <h1 class="page-hero-title">How The Anomaly Detection Actually Works</h1>
+    <p class="page-hero-sub">How an on-device model learns what 'normal' looks like at one specific station, and catches the moment something drifts away from it.</p>
+  </div>
+</header>
+<section class="section bg-white">
+  <div class="container" style="max-width:820px">
+    <h2 class="section-title" style="font-size:1.55rem;margin-bottom:16px">Learning a station's own baseline</h2>
+    
+            <p>The edge AI model doesn't start with a fixed, one-size-fits-all rulebook. Over its first weeks of operation, it baselines each individual station's own normal recovery pattern: how much vapor a typical tank-fill or refuelling event returns, at what pressure, over what time window &mdash; because a busy highway station and a quiet rural one have genuinely different &ldquo;normal.&rdquo;</p>
+  </div>
+</section>
+<section class="section bg-white">
+  <div class="container" style="max-width:820px">
+    <h2 class="section-title" style="font-size:1.55rem;margin-bottom:16px">Catching drift before it's a leak</h2>
+    
+            <p>Once that baseline exists, the model watches for deviations. A coupling that suddenly returns less vapor than its own history predicts is a strong, early signal of a worn seal or a developing fault &mdash; often well before it's large enough for a person to notice or smell.</p>
+  </div>
+</section>
+<section class="section bg-white">
+  <div class="container" style="max-width:820px">
+    <h2 class="section-title" style="font-size:1.55rem;margin-bottom:16px">Why it runs on the device itself</h2>
+    
+            <p>Inference runs on-device rather than depending on a constant cloud connection, so the fault-detection function keeps working even during the patchy connectivity many rural sites actually have. That's a deliberate design choice made for the environment this device is actually going into, not an engineering afterthought.</p>
+  </div>
+</section>
+<section class="section bg-white">
+  <div class="container" style="max-width:820px">
+    <h2 class="section-title" style="font-size:1.55rem;margin-bottom:16px">How an alert reaches the owner</h2>
+    
+            <p>When an anomaly is flagged, it surfaces two ways: instantly through the enclosure's own status LED for anyone standing nearby, and remotely through an SMS/app alert straight to the owner's phone. See the <a href="dashboard.html">Live Dashboard</a> for exactly what that alert looks like when it arrives.</p>
+  </div>
+</section>
+<section class="section bg-light section-tight">
+  <div class="container" style="max-width:820px">
+    <div class="grid grid-3 reveal"><div class="card" style="text-align:center">
+      <div style="font-size:2rem;font-weight:800;color:var(--navy)">On-device</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-top:6px">inference — no constant cloud connection required</div>
+      
+    </div><div class="card" style="text-align:center">
+      <div style="font-size:2rem;font-weight:800;color:var(--navy)">2 channels</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-top:6px">status LED on-site + SMS/app alert remotely</div>
+      
+    </div><div class="card" style="text-align:center">
+      <div style="font-size:2rem;font-weight:800;color:var(--navy)">Weeks</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-top:6px">of operation used to learn a station's own baseline</div>
+      
+    </div></div>
+  </div>
+</section>
+<section class="section bg-white">
+  <div class="container" style="max-width:820px">
+    <h3 style="margin-bottom:16px;font-size:1.1rem;color:var(--navy)">Keep exploring</h3>
+    <a href="problem.html#solution" class="btn btn-outline" style="margin:6px 10px 6px 0">← Back to Our Solution</a><a href="dashboard.html" class="btn btn-outline" style="margin:6px 10px 6px 0">See the Live Dashboard</a><a href="detail-productivity.html" class="btn btn-outline" style="margin:6px 10px 6px 0">Related: Productivity benefit →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h5>VaporGuard</h5>
+        <p style="font-size:.84rem;max-width:280px;">AI-monitored retrofit vapor recovery and leak detection for small and rural fuel stations. Student project prototype.</p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <a href="problem.html">Problem</a><a href="roi.html">ROI Calculator</a>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <a href="product.html">Specifications</a><a href="dashboard.html">Dashboard</a><a href="contact.html">Request Demo</a>
+      </div>
+      <div>
+        <h5>Sources</h5>
+        <div class="sources-list">
+          Fuel station count &amp; rural share &mdash; industry data, Business Standard, Dec 2025.<br/>
+          NGT vapor recovery directive &mdash; Dec 2021, CPCB/SPCB.<br/>
+          Evaporative loss range &mdash; industry technical literature; Statistics Canada retail outlet study, 2009 (proxy).<br/>
+          Benzene health effects on Indian pump attendants &mdash; peer-reviewed occupational health studies.<br/>
+          VOC reduction / Delhi VRS pump count &mdash; vapor recovery market research, 2025.<br/>
+          Fuel prices &mdash; Goodreturns / CarDekho, 18 Aug 2026.<br/>
+          Hardware price, subscription price, capture efficiency &mdash; our own business/engineering assumptions.
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> VaporGuard &mdash; Student project prototype, not a registered company.</span>
+      <span>Built for MSME Idea Hackathon 6.0 &mdash; Energy Efficiency</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>

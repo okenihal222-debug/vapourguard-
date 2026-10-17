@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product — VaporGuard</title>
+<meta name="description" content="VaporGuard retrofit unit specifications, installation, and prototype status." />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><span class="dot"></span> VaporGuard</a>
+    <div class="nav-links">
+      <a href="problem.html">Problem</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="roi.html">ROI Calculator</a>
+      <a href="product.html" class="current">Product</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="roi.html" class="btn btn-ghost">Try ROI Calculator</a>
+      <a href="contact.html" class="btn btn-primary">Request Demo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="crumbs">Home / Product</div>
+    <div class="section-kicker" style="color:#8fd0e8">Product</div>
+    <h1 class="page-hero-title">VaporGuard retrofit unit</h1>
+    <p class="page-hero-sub">Specifications, installation flow, and what's demonstrated in this prototype today.</p>
+  </div>
+</header>
+
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-kicker">Prototype</div>
+      <h2 class="section-title" style="font-size:1.8rem">What's being demonstrated today</h2>
+      <p class="section-sub">This website is the working software prototype: the owner dashboard, live monitoring UI, and an interactive ROI calculator, all running on realistic, clearly labelled demo data.</p>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card"><span class="tag tag-demo">Demo Data</span><h4 style="margin-top:12px;font-size:1rem">Live Dashboard</h4><p style="font-size:.88rem;color:var(--muted)">Simulates the readings a real installed unit would stream to an owner.</p></div>
+      <div class="card"><span class="tag tag-assumption">Assumption-Based</span><h4 style="margin-top:12px;font-size:1rem">ROI Calculator</h4><p style="font-size:.88rem;color:var(--muted)">Computes savings live from inputs, using transparent, editable assumptions.</p></div>
+      <div class="card"><span class="tag tag-verified">Sourced</span><h4 style="margin-top:12px;font-size:1rem">Market Data</h4><p style="font-size:.88rem;color:var(--muted)">Every India-market figure on this site is cited in the Sources section below.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-light">
+  <div class="container">
+    <div class="grid grid-2 reveal" style="align-items:start;">
+      <div class="card">
+        <h4 style="font-size:1.05rem">Specifications</h4>
+        <table class="spec-table">
+          <tr><td>Capture stages</td><td>Stage 1 (tank fill) + Stage 2 (nozzle)</td></tr>
+          <tr><td>Monitoring</td><td>Edge AI, on-device, continuous</td></tr>
+          <tr><td>Connectivity</td><td>Owner dashboard (web) + SMS/app alerts</td></tr>
+          <tr><td>Install type</td><td>Retrofit &mdash; no full tank replacement needed</td></tr>
+          <tr><td>Target sites</td><td>Small & rural fuel stations, fuel depots</td></tr>
+          <tr><td>Est. hardware cost</td><td>₹2,00,000 / unit <span class="tag tag-assumption" style="margin-left:6px;">assumption</span></td></tr>
+          <tr><td>Monitoring subscription</td><td>₹2,000 / month <span class="tag tag-assumption" style="margin-left:6px;">assumption</span></td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h4 style="font-size:1.05rem">Installation & maintenance</h4>
+        <p style="font-size:.9rem;color:var(--muted)">Retrofit installation is designed to be completed without shutting down the station for more than a few hours, using the existing tank and dispenser infrastructure. Ongoing maintenance is proactive: the AI layer flags a worn seal or coupling before it fails, and the subscription covers monitoring, model updates, and maintenance alerts.</p>
+        <div class="grid grid-2" style="margin-top:18px;gap:14px;">
+          <div class="card" style="padding:16px;"><div class="icon-circle bg-deep" style="width:40px;height:40px;font-size:1rem;margin-bottom:8px;">1</div><p style="font-size:.82rem;margin:0">Site survey & fit-check</p></div>
+          <div class="card" style="padding:16px;"><div class="icon-circle bg-teal" style="width:40px;height:40px;font-size:1rem;margin-bottom:8px;">2</div><p style="font-size:.82rem;margin:0">Retrofit install (hours, not days)</p></div>
+          <div class="card" style="padding:16px;"><div class="icon-circle bg-amber" style="width:40px;height:40px;font-size:1rem;margin-bottom:8px;">3</div><p style="font-size:.82rem;margin:0">AI calibration to station pattern</p></div>
+          <div class="card" style="padding:16px;"><div class="icon-circle bg-green" style="width:40px;height:40px;font-size:1rem;margin-bottom:8px;">4</div><p style="font-size:.82rem;margin:0">Live dashboard handover</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h5>VaporGuard</h5>
+        <p style="font-size:.84rem;max-width:280px;">AI-monitored retrofit vapor recovery and leak detection for small and rural fuel stations. Student project prototype.</p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <a href="problem.html">Problem</a><a href="roi.html">ROI Calculator</a>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <a href="product.html">Specifications</a><a href="dashboard.html">Dashboard</a><a href="contact.html">Request Demo</a>
+      </div>
+      <div>
+        <h5>Sources</h5>
+        <div class="sources-list">
+          Fuel station count &amp; rural share &mdash; industry data, Business Standard, Dec 2025.<br/>
+          NGT vapor recovery directive &mdash; Dec 2021, CPCB/SPCB.<br/>
+          Evaporative loss range &mdash; industry technical literature; Statistics Canada retail outlet study, 2009 (proxy).<br/>
+          Benzene health effects on Indian pump attendants &mdash; peer-reviewed occupational health studies.<br/>
+          VOC reduction / Delhi VRS pump count &mdash; vapor recovery market research, 2025.<br/>
+          Fuel prices &mdash; Goodreturns / CarDekho, 18 Aug 2026.<br/>
+          Hardware price, subscription price, capture efficiency &mdash; our own business/engineering assumptions.
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> VaporGuard &mdash; Student project prototype, not a registered company.</span>
+      <span>Built for MSME Idea Hackathon 6.0 &mdash; Energy Efficiency</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>

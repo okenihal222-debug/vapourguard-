@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ROI Calculator — VaporGuard</title>
+<meta name="description" content="Estimate savings and payback for your own fuel station with the VaporGuard ROI calculator." />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><span class="dot"></span> VaporGuard</a>
+    <div class="nav-links">
+      <a href="problem.html">Problem</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="roi.html" class="current">ROI Calculator</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="roi.html" class="btn btn-ghost">Try ROI Calculator</a>
+      <a href="contact.html" class="btn btn-primary">Request Demo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="crumbs">Home / ROI Calculator</div>
+    <div class="section-kicker" style="color:#8fd0e8">ROI Calculator</div>
+    <h1 class="page-hero-title">Estimate your own savings</h1>
+    <p class="page-hero-sub">Adjust the assumptions to match a real station. Results are estimates based on the assumptions used, not guarantees.</p>
+  </div>
+</header>
+
+<section class="section bg-light">
+  <div class="container">
+    <div class="roi-shell reveal">
+      <div class="roi-inputs">
+        <div class="field">
+          <label>Daily fuel throughput <span class="val" id="roi-throughput-val">6,000 L/day</span></label>
+          <input type="range" id="roi-throughput" min="1000" max="15000" step="500" value="6000" />
+        </div>
+        <div class="field">
+          <label>Assumed evaporation loss <span class="val" id="roi-loss-val">0.30%</span></label>
+          <input type="range" id="roi-loss" min="0.18" max="0.50" step="0.01" value="0.30" />
+        </div>
+        <div class="field">
+          <label>Fuel price used <span class="val" id="roi-price-val">₹98.5</span></label>
+          <input type="range" id="roi-price" min="90" max="115" step="0.5" value="98.5" />
+        </div>
+        <div class="field">
+          <label>Number of stations/units <span class="val" id="roi-units-val">1</span></label>
+          <input type="range" id="roi-units" min="1" max="50" step="1" value="1" />
+        </div>
+        <div class="data-note">
+          ⚠️ These sliders drive an <strong>estimate</strong>. Throughput and loss-rate defaults are engineering assumptions (see Sources); capture efficiency is fixed at 75%, our conservative business projection, not a lab-verified figure.
+        </div>
+      </div>
+      <div class="roi-outputs">
+        <div class="roi-result">
+          <div class="cap">Estimated annual savings</div>
+          <div class="num" id="roi-money-year">—</div>
+        </div>
+        <div class="roi-grid">
+          <div class="roi-mini"><div class="cap">Fuel recovered</div><div class="num" id="roi-fuel-recovered">—</div></div>
+          <div class="roi-mini"><div class="cap">Savings / day (fleet)</div><div class="num" id="roi-money-day">—</div></div>
+          <div class="roi-mini"><div class="cap">Payback period</div><div class="num" id="roi-payback">—</div></div>
+          <div class="roi-mini"><div class="cap">Estimated annual ROI</div><div class="num" id="roi-roi">—</div></div>
+          <div class="roi-mini"><div class="cap">Total hardware cost</div><div class="num" id="roi-hardware-total">—</div></div>
+          <div class="roi-mini"><div class="cap">Vapor avoided (fleet)</div><div class="num" id="roi-vapor-avoided">—</div></div>
+        </div>
+        <div class="roi-note">
+          Calculation: (throughput × loss% × 75% assumed capture efficiency × fuel price) − subscription cost, against a ₹2,00,000/unit assumed hardware price and ₹2,000/month assumed subscription — both our own business projections, not market-verified prices.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h5>VaporGuard</h5>
+        <p style="font-size:.84rem;max-width:280px;">AI-monitored retrofit vapor recovery and leak detection for small and rural fuel stations. Student project prototype.</p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <a href="problem.html">Problem</a><a href="roi.html">ROI Calculator</a>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <a href="product.html">Specifications</a><a href="dashboard.html">Dashboard</a><a href="contact.html">Request Demo</a>
+      </div>
+      <div>
+        <h5>Sources</h5>
+        <div class="sources-list">
+          Fuel station count &amp; rural share &mdash; industry data, Business Standard, Dec 2025.<br/>
+          NGT vapor recovery directive &mdash; Dec 2021, CPCB/SPCB.<br/>
+          Evaporative loss range &mdash; industry technical literature; Statistics Canada retail outlet study, 2009 (proxy).<br/>
+          Benzene health effects on Indian pump attendants &mdash; peer-reviewed occupational health studies.<br/>
+          VOC reduction / Delhi VRS pump count &mdash; vapor recovery market research, 2025.<br/>
+          Fuel prices &mdash; Goodreturns / CarDekho, 18 Aug 2026.<br/>
+          Hardware price, subscription price, capture efficiency &mdash; our own business/engineering assumptions.
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> VaporGuard &mdash; Student project prototype, not a registered company.</span>
+      <span>Built for MSME Idea Hackathon 6.0 &mdash; Energy Efficiency</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>

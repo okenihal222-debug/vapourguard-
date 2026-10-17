@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Problem, Solution & Benefits — VaporGuard</title>
+<meta name="description" content="Why fuel vapor loss matters, the retrofit unit we built to fix it, and who gains — click any card for the full detail." />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><span class="dot"></span> VaporGuard</a>
+    <div class="nav-links">
+      <a href="problem.html" class="current">Problem</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="roi.html">ROI Calculator</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="roi.html" class="btn btn-ghost">Try ROI Calculator</a>
+      <a href="contact.html" class="btn btn-primary">Request Demo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="crumbs">Home / Problem, Solution & Benefits</div>
+    <div class="section-kicker" style="color:#8fd0e8">Problem → Solution → Benefits</div>
+    <h1 class="page-hero-title">Why it matters, what we built, and who gains</h1>
+    <p class="page-hero-sub">Every time a tanker fills a station's underground tank, or a vehicle is refuelled at the nozzle, fuel escapes as vapor — carrying benzene, a known carcinogen, and taking saleable fuel with it. Click any card below for the full picture.</p>
+  </div>
+</header>
+
+<section class="section bg-white" id="problem">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-kicker">The Problem</div>
+      <h2 class="section-title">Vapor loss is a health hazard and a financial leak</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card card-clickable" data-modal-target="modal-attendants" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="icon-circle bg-deep">🧑‍🔧</div>
+        <h4>Pump attendants</h4>
+        <p style="font-size:.92rem;color:var(--muted)">Multiple Indian studies on petrol pump workers have found measurably altered blood and hematology markers, consistent with chronic benzene exposure from vapor at the nozzle and tank vents.</p>
+        <span class="card-more">Read more →</span>
+      </div>
+      <div class="card card-clickable" data-modal-target="modal-owners" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="icon-circle bg-amber">💸</div>
+        <h4>Station owners</h4>
+        <p style="font-size:.92rem;color:var(--muted)">Evaporative losses run roughly 0.18%–0.5% of fuel throughput — fuel the owner already paid for but can never sell. Two-thirds of this loss happens during tank refilling alone.</p>
+        <span class="card-more">Read more →</span>
+      </div>
+      <div class="card card-clickable" data-modal-target="modal-communities" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="icon-circle bg-teal">🏘️</div>
+        <h4>Nearby communities</h4>
+        <p style="font-size:.92rem;color:var(--muted)">VOC emissions from uncontrolled fuel handling affect local air quality around stations, especially in dense small-town and rural clusters with no recovery infrastructure.</p>
+        <span class="card-more">Read more →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM IN NUMBERS ===================== -->
+<section class="stat-band section-tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-kicker" style="color:#8fd0e8">Problem In Numbers</div>
+      <h2 class="section-title" style="color:#fff">The scale nobody's addressing</h2>
+    </div>
+    <div class="grid grid-4 reveal">
+      <div class="stat-cell">
+        <b><span data-counter="100000" data-suffix="+">0</span></b>
+        <span class="cap">fuel retail outlets in India, and growing</span>
+        <span class="src">Business Standard, Dec 2025 (industry data)</span>
+      </div>
+      <div class="stat-cell">
+        <b><span data-counter="29" data-suffix="%">0</span></b>
+        <span class="cap">of stations are rural &mdash; up from 22% a decade ago</span>
+        <span class="src">Business Standard, Dec 2025</span>
+      </div>
+      <div class="stat-cell">
+        <b>0.18&ndash;0.5<span>%</span></b>
+        <span class="cap">of fuel throughput lost to evaporation at Stage 1 & 2</span>
+        <span class="src">Industry technical literature; Statistics Canada retail-outlet study, 2009 (used as technical proxy)</span>
+      </div>
+      <div class="stat-cell">
+        <b><span data-counter="84" data-suffix="%">0</span></b>
+        <span class="cap">VOC emissions cut in urban regions where vapor recovery is used</span>
+        <span class="src">Industry market research, 2025</span>
+      </div>
+    </div>
+    <p style="font-size:.8rem;color:#8ea0b0;margin-top:22px;max-width:820px;">
+      Regulatory context: following a December 2021 National Green Tribunal directive, CPCB and State Pollution Control Boards made vapor recovery systems mandatory for <strong>new</strong> petroleum outlets only — leaving the large existing and fast-growing base of small/rural stations, including roughly 29% of the network, without a mandate or an affordable retrofit path.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== SOLUTION ===================== -->
+<section class="section bg-light" id="solution">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-kicker">Our Solution</div>
+      <h2 class="section-title">A retrofit vapor recovery unit, sized for small stations</h2>
+      <p class="section-sub">Not a scaled-down version of expensive city-station equipment — a purpose-built retrofit that combines both capture stages with AI monitoring in one compact unit.</p>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card card-clickable" data-modal-target="modal-stage12" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="icon-circle bg-deep">🔗</div>
+        <h4>Stage 1 + Stage 2, combined</h4>
+        <p style="font-size:.92rem;color:var(--muted)">Captures vapor during both tanker unloading and vehicle refuelling in a single retrofit unit, instead of two separate large installations.</p>
+        <span class="card-more">Read more →</span>
+      </div>
+      <div class="card card-clickable" data-modal-target="modal-ai" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="icon-circle bg-teal">🤖</div>
+        <h4>AI leak & anomaly detection</h4>
+        <p style="font-size:.92rem;color:var(--muted)">An edge AI model learns each station's normal recovery pattern and flags a worn seal or fault before it becomes a leak or safety incident.</p>
+        <span class="card-more">Read more →</span>
+      </div>
+      <div class="card card-clickable" data-modal-target="modal-rupee-dash" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="icon-circle bg-amber">📊</div>
+        <h4>Rupee-savings dashboard</h4>
+        <p style="font-size:.92rem;color:var(--muted)">Recovered vapor is recovered fuel. The owner sees real, measurable savings against their own throughput — not an abstract compliance score.</p>
+        <span class="card-more">Read more →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="section bg-white" id="how">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="section-kicker">How It Works</div>
+      <h2 class="section-title">From vapor to value, in four steps</h2>
+      <p class="section-sub">Problem → Device → Processing → Benefit</p>
+    </div>
+    <div class="steps reveal" style="position:relative;">
+      <div class="step-line"></div>
+      <div class="grid grid-4">
+        <div class="step">
+          <div class="step-num bg-amber">1</div>
+          <h4>Vapor generated</h4>
+          <p>Tanker unloading fills the underground tank; vehicle refuelling dispenses fuel at the nozzle. Both release vapor.</p>
+        </div>
+        <div class="step">
+          <div class="step-num bg-deep">2</div>
+          <h4>Dual-stage capture</h4>
+          <p>Sealed couplings and a vapor-assist nozzle route vapor back into the tank instead of into the air.</p>
+        </div>
+        <div class="step">
+          <div class="step-num bg-teal">3</div>
+          <h4>Edge AI monitoring</h4>
+          <p>Flow & pressure sensors feed an on-device AI model that learns normal patterns and flags anomalies early.</p>
+        </div>
+        <div class="step">
+          <div class="step-num bg-green">4</div>
+          <h4>Owner dashboard</h4>
+          <p>Recovery efficiency, rupees saved, and maintenance alerts — shown in plain language, updated live.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TECHNOLOGY ===================== -->
+<section class="section bg-light" id="technology">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-kicker">Technology Used</div>
+      <h2 class="section-title">What's actually inside the unit</h2>
+    </div>
+    <div class="grid grid-4 reveal">
+      <div class="card">
+        <div class="icon-circle bg-deep">🔩</div>
+        <h4 style="font-size:1rem">Hardware</h4>
+        <p style="font-size:.88rem;color:var(--muted)">Sealed vapor coupling, vapor-assist nozzle attachment, relay-driven capture valves.</p>
+      </div>
+      <div class="card">
+        <div class="icon-circle bg-teal">📡</div>
+        <h4 style="font-size:1rem">Sensors</h4>
+        <p style="font-size:.88rem;color:var(--muted)">Flow sensors and pressure transducers at both capture points, sampled continuously.</p>
+      </div>
+      <div class="card">
+        <div class="icon-circle bg-amber">🧠</div>
+        <h4 style="font-size:1rem">Edge AI</h4>
+        <p style="font-size:.88rem;color:var(--muted)">A lightweight on-device anomaly-detection model — no continuous cloud connection required to function.</p>
+      </div>
+      <div class="card">
+        <div class="icon-circle bg-green">📱</div>
+        <h4 style="font-size:1rem">Dashboard & alerts</h4>
+        <p style="font-size:.88rem;color:var(--muted)">Owner-facing web dashboard plus SMS/app alerts for maintenance and recovery performance.</p>
+      </div>
+    </div>
+    <p style="font-size:.85rem;color:var(--muted);max-width:760px;margin-top:24px;">
+      <strong>Path to commercial product:</strong> the interview prototype demonstrates the dashboard, ROI logic, and monitoring UI on real assumptions. The next hardware milestone is a bench-tested capture unit validated at a partner station, followed by a small pilot batch for field data collection.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== BENEFITS ===================== -->
+<section class="section bg-white" id="benefits">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-kicker">Benefits</div>
+      <h2 class="section-title">Who gains, and how</h2>
+      <p class="section-sub">Both the station owner's balance sheet and the surrounding environment benefit — explore each below.</p>
+    </div>
+    <div class="tabbar reveal">
+      <button class="tabbtn active" data-tab-btn data-tab-group="benefits" data-tab-value="customer">Customer Benefits</button>
+      <button class="tabbtn" data-tab-btn data-tab-group="benefits" data-tab-value="environment">Environmental Benefits</button>
+    </div>
+
+    <div class="tabpanel grid grid-4 active" data-tab-panel data-tab-group="benefits" data-tab-value="customer">
+      <div class="card card-clickable" data-modal-target="modal-cost-savings" tabindex="0" role="button" aria-haspopup="dialog"><div class="icon-circle bg-amber">💰</div><h4 style="font-size:1rem">Cost savings</h4><p style="font-size:.86rem;color:var(--muted)">Recovered fuel volume shows up directly as reduced inventory loss.</p><span class="card-more">Read more →</span></div>
+      <div class="card card-clickable" data-modal-target="modal-productivity" tabindex="0" role="button" aria-haspopup="dialog"><div class="icon-circle bg-deep">📈</div><h4 style="font-size:1rem">Productivity</h4><p style="font-size:.86rem;color:var(--muted)">Early fault alerts avoid unplanned downtime and repair costs.</p><span class="card-more">Read more →</span></div>
+      <div class="card card-clickable" data-modal-target="modal-safety" tabindex="0" role="button" aria-haspopup="dialog"><div class="icon-circle bg-teal">🛡️</div><h4 style="font-size:1rem">Safety</h4><p style="font-size:.86rem;color:var(--muted)">Lower vapor concentration around the nozzle and tank vents.</p><span class="card-more">Read more →</span></div>
+      <div class="card card-clickable" data-modal-target="modal-payback" tabindex="0" role="button" aria-haspopup="dialog"><div class="icon-circle bg-green">⏱️</div><h4 style="font-size:1rem">Fast payback</h4><p style="font-size:.86rem;color:var(--muted)">Savings are measured against the station's own throughput — see the ROI calculator.</p><span class="card-more">Read more →</span></div>
+    </div>
+
+    <div class="tabpanel grid grid-4" data-tab-panel data-tab-group="benefits" data-tab-value="environment">
+      <div class="card card-clickable" data-modal-target="modal-pollution" tabindex="0" role="button" aria-haspopup="dialog"><div class="icon-circle bg-green">🌫️</div><h4 style="font-size:1rem">Pollution reduction</h4><p style="font-size:.86rem;color:var(--muted)">Less benzene and VOC released at ground level near stations.</p><span class="card-more">Read more →</span></div>
+      <div class="card card-clickable" data-modal-target="modal-resource" tabindex="0" role="button" aria-haspopup="dialog"><div class="icon-circle bg-teal">♻️</div><h4 style="font-size:1rem">Resource conservation</h4><p style="font-size:.86rem;color:var(--muted)">Fuel that would evaporate is retained and sold instead of wasted.</p><span class="card-more">Read more →</span></div>
+      <div class="card card-clickable" data-modal-target="modal-compliance" tabindex="0" role="button" aria-haspopup="dialog"><div class="icon-circle bg-deep">🧭</div><h4 style="font-size:1rem">Compliance readiness</h4><p style="font-size:.86rem;color:var(--muted)">Prepares small/rural stations for any future mandate extension.</p><span class="card-more">Read more →</span></div>
+      <div class="card card-clickable" data-modal-target="modal-community-air" tabindex="0" role="button" aria-haspopup="dialog"><div class="icon-circle bg-amber">🏙️</div><h4 style="font-size:1rem">Community air quality</h4><p style="font-size:.86rem;color:var(--muted)">Contributes to the same direction of improvement seen in cities with VRS adoption.</p><span class="card-more">Read more →</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEPTH MODALS ===================== -->
+
+<div class="modal-overlay" id="modal-attendants">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-attendants-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">The Problem</div>
+    <h3 class="modal-title" id="modal-attendants-title">Pump attendants: chronic, everyday exposure</h3>
+    
+<p>Benzene is a volatile component of petrol vapor and a recognised human carcinogen. Attendants are exposed twice over: at the nozzle during every single refuelling, and near the tank vents whenever a tanker unloads — often across 8&ndash;12 hour shifts, standing directly at the point of release.</p>
+<p>Multiple peer-reviewed Indian studies have compared long-serving pump attendants against unexposed control groups and found measurably altered blood and hematology markers &mdash; a biological signature consistent with chronic low-level benzene exposure, not just occupational discomfort. <span class="tag tag-verified">VERIFIED — published studies</span></p>
+<p>Small and rural stations are exactly where this risk is least mitigated: they're the segment without Stage 2 nozzle-recovery hardware, so attendants there breathe vapor that urban pump workers largely no longer do.</p>
+<p>This is the exposure VaporGuard's Stage 2 vapor-assist nozzle line is built to close &mdash; capturing vapor at the same point attendants stand, instead of letting it disperse into the air they breathe all shift.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-pump-attendants.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-owners">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-owners-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">The Problem</div>
+    <h3 class="modal-title" id="modal-owners-title">Station owners: fuel they already paid for, gone</h3>
+    
+<p>Evaporative loss isn't a rounding error &mdash; industry technical literature puts it at roughly 0.18%&ndash;0.5% of total throughput across both capture stages, and about two-thirds of that happens during tank refilling (Stage 1) alone, before a single vehicle is even served. <span class="tag tag-verified">VERIFIED — industry literature</span></p>
+<p>The owner has already paid the dealer/OMC price for every litre in that tank. Fuel lost to evaporation isn't insured, isn't reimbursed, and isn't recoverable after the fact &mdash; it's a straight subtraction from margin on a business that already runs on thin per-litre commissions.</p>
+<p>Because the loss is invisible (there's no meter that shows "litres evaporated today"), most small owners have never had a number to attach to it &mdash; which is exactly the gap VaporGuard's dashboard is built to close.</p>
+<p>See the <a href="roi.html">ROI Calculator</a> for what this looks like translated into an actual monthly and annual savings figure for a station like yours.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-station-owners.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-communities">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-communities-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">The Problem</div>
+    <h3 class="modal-title" id="modal-communities-title">Nearby communities: air quality at ground level</h3>
+    
+<p>Fuel vapor released during refuelling and tank-fill events isn't only a worker-exposure issue &mdash; it's released at ground level, right where people walk, shop, and live, especially in the dense small-town markets where many rural and semi-urban stations sit close to residential and commercial buildings.</p>
+<p>VOCs from uncontrolled fuel handling contribute to local air-quality degradation and, in the presence of sunlight and other pollutants, can react to form ground-level ozone.</p>
+<p>The scale of what's achievable is already demonstrated: cities where vapor recovery has been adopted have seen VOC emissions cut by roughly 84%. <span class="tag tag-verified">VERIFIED — market research, 2025</span> That improvement has so far been concentrated in urban centers &mdash; rural and small-town clusters, nearly 29% of India's station network, haven't seen the same benefit.</p>
+<p>Closing that gap at the community level is a direct side-effect of closing it at the individual-station level &mdash; every station that adopts capture technology contributes to the same direction of improvement already proven in cities.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-nearby-communities.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-stage12">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-stage12-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Our Solution</div>
+    <h3 class="modal-title" id="modal-stage12-title">Why combining both stages into one retrofit matters</h3>
+    
+<p>Existing vapor recovery systems typically treat Stage 1 (tank-fill capture) and Stage 2 (nozzle-refuelling capture) as two separate large installations &mdash; each with its own footprint, plumbing, and installation cost. That's manageable for a high-throughput city station with space and capital to spare; it's a non-starter for a small rural outlet.</p>
+<p>VaporGuard's retrofit unit integrates both capture stages into a single compact enclosure, sharing sensors, valves, and the monitoring controller between them rather than duplicating hardware. That's the core design decision that makes a small-station price point possible at all.</p>
+<p>Practically, this also means one installation visit, one enclosure to maintain, and one dashboard &mdash; not two separate systems an owner has to think about.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-stage1-stage2.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-ai">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-ai-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Our Solution</div>
+    <h3 class="modal-title" id="modal-ai-title">How the anomaly detection actually works</h3>
+    
+<p>The edge AI model doesn't start with a fixed rulebook &mdash; it baselines each station's own normal recovery pattern over its first weeks of operation: how much vapor a typical tank-fill or refuelling event returns, at what pressure, over what time window.</p>
+<p>Once that baseline exists, the model watches for deviations &mdash; a coupling that suddenly returns less vapor than its own history predicts is a strong, early signal of a worn seal or a developing leak, well before it's large enough for a person to notice or smell.</p>
+<p>Because inference runs on-device rather than depending on a constant cloud connection, the fault-detection function keeps working even during the patchy connectivity many rural sites actually have &mdash; a deliberate design choice, not an afterthought.</p>
+<p>When an anomaly is flagged, it's surfaced two ways: instantly through the enclosure's status LED, and remotely through an SMS/app alert to the owner's phone &mdash; see the <a href="dashboard.html">Live Dashboard</a> for what that alert stream looks like.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-ai-detection.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-rupee-dash">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-rupee-dash-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Our Solution</div>
+    <h3 class="modal-title" id="modal-rupee-dash-title">Why we lead with rupees, not compliance</h3>
+    
+<p>Compliance-framed pitches ("this reduces your emissions") tend to land as a cost, not a benefit, especially for an owner who is not currently under any legal mandate to install anything at all &mdash; the NGT's December 2021 directive only requires vapor recovery for new outlets.</p>
+<p>The dashboard instead leads with the number that already matters to the owner every day: rupees. Recovered vapor is recovered, saleable fuel, and the dashboard converts sensor readings directly into an estimated daily and annual savings figure &mdash; calculated against that specific station's own throughput, not a generic industry average.</p>
+<p>Every figure the dashboard shows is traceable back to a documented assumption (throughput, evaporation rate, capture efficiency, fuel price) &mdash; see the <a href="roi.html">ROI Calculator</a> to adjust those assumptions yourself and see how the number changes for your station.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-rupee-dashboard.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-cost-savings">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-cost-savings-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Benefits — Customer</div>
+    <h3 class="modal-title" id="modal-cost-savings-title">Where the savings actually come from</h3>
+    
+<p>The saving isn't an incentive or a rebate &mdash; it's fuel the station already purchased, that would otherwise have evaporated and never been sold. Capturing it and returning it to inventory is the entire mechanism; there's no new revenue stream to build, no new customer behaviour to change.</p>
+<p>In our base-case model (6,000 L/day throughput, 0.30% evaporation loss, 75% assumed capture efficiency, ₹98.5/L blended fuel price) that works out to roughly 13.5 L recovered per day, or about ₹4.85 lakh per year, against a ₹2,00,000 assumed hardware cost. <span class="tag tag-calculated">CALCULATED — from stated assumptions</span></p>
+<p>See the <a href="roi.html">ROI Calculator</a> to run these numbers for your own station's throughput.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-cost-savings.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-productivity">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-productivity-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Benefits — Customer</div>
+    <h3 class="modal-title" id="modal-productivity-title">Why early fault alerts protect uptime</h3>
+    
+<p>A small station typically runs on one or two dispensers &mdash; there's no redundancy. An unplanned fault that takes a dispenser offline mid-day is a direct, immediate hit to that day's revenue, not just a maintenance inconvenience.</p>
+<p>Because the AI layer flags a developing fault (a worn seal, a pressure anomaly) before it becomes a hard failure, an owner can schedule the fix during a genuinely low-traffic window &mdash; early morning, late night &mdash; instead of losing peak-hour throughput to an emergency repair.</p>
+<p>This is the same underlying anomaly-detection mechanism described in the Solution section above, just viewed from the owner's operational side rather than the technical side.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-productivity.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-safety">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-safety-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Benefits — Customer</div>
+    <h3 class="modal-title" id="modal-safety-title">Safety is more than the headline health case</h3>
+    
+<p>Lower vapor concentration at the nozzle and tank vents reduces attendant benzene exposure, as covered in the Problem section above &mdash; but reduced fuel-vapor concentration in the air around a dispensing point also lowers the immediate fire and flashpoint risk that comes with any accumulation of flammable vapor in a workspace.</p>
+<p>This is a basic workplace-safety expectation at any modern station, and one that small/rural sites currently have less engineering support to meet than their urban counterparts, who've had Stage 2 systems for longer.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-safety.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-payback">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-payback-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Benefits — Customer</div>
+    <h3 class="modal-title" id="modal-payback-title">What “fast” means in this model</h3>
+    
+<p>Because the savings are pegged to the station's own throughput rather than a fixed subsidy, payback scales with how much fuel actually moves through the station &mdash; higher-throughput stations recover their investment faster than lower-throughput ones.</p>
+<p>In our documented base case, that works out to an estimated payback period of about 5.3 months and an estimated annual ROI of roughly 231% &mdash; both calculated from the assumptions shown on the ROI Calculator page, not confirmed market prices. <span class="tag tag-calculated">CALCULATED — treat as a starting model to adjust</span></p>
+<p>Open the <a href="roi.html">ROI Calculator</a> to plug in your own station's numbers.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-fast-payback.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-pollution">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-pollution-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Benefits — Environmental</div>
+    <h3 class="modal-title" id="modal-pollution-title">The mechanism behind the reduction</h3>
+    
+<p>Every litre of vapor captured instead of released is a litre of benzene and other VOCs that never reach ground level near the pump. This is the same physical process described in the Problem section's "Nearby communities" point, just from the mitigation side rather than the risk side.</p>
+<p>The benchmark for what's achievable already exists: cities with vapor recovery adoption have documented an 84% cut in VOC emissions. <span class="tag tag-verified">VERIFIED — market research, 2025</span> Small and rural stations, effectively excluded from that benchmark today, are precisely who this device is built for.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-pollution-reduction.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-resource">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-resource-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Benefits — Environmental</div>
+    <h3 class="modal-title" id="modal-resource-title">Fuel saved at scale</h3>
+    
+<p>At the single-station level, our base-case model estimates roughly 13.5 L of vapor captured per day rather than lost to the atmosphere. That scales roughly linearly with adoption: about 1,350 L/day across 100 stations, or approximately 392,000 L/day if adopted across all ~29,000 underserved rural stations in India. <span class="tag tag-calculated">CALCULATED — engineering projection, not measured</span></p>
+<p>Fuel is a resource India imports and prices at a national level &mdash; reducing waste at the pump is a small but real contribution to reducing that import burden, independent of the emissions case.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-resource-conservation.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-compliance">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-compliance-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Benefits — Environmental</div>
+    <h3 class="modal-title" id="modal-compliance-title">Getting ahead of a mandate that may expand</h3>
+    
+<p>The December 2021 NGT directive currently requires vapor recovery only for new petroleum outlets &mdash; existing stations, including nearly all rural ones, face no mandate today. But the regulatory direction over the past several years has consistently moved toward wider VRS coverage, not narrower.</p>
+<p>A station that installs VaporGuard now isn't reacting to a future mandate under time pressure &mdash; it's already positioned ahead of one, should the requirement ever be extended to existing outlets, the same way it already has been for new ones.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-compliance-readiness.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-community-air">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-community-air-title">
+    <button class="modal-close" data-modal-close aria-label="Close">✕</button>
+    <div class="section-kicker">Benefits — Environmental</div>
+    <h3 class="modal-title" id="modal-community-air-title">From one station to a network effect</h3>
+    
+<p>A single station's emissions reduction is small in isolation, but nearly 29,000 rural and small-town stations sit in exactly the communities that haven't benefited from the urban VOC reductions already documented. Adoption at scale in that segment closes a real, geographically specific gap in India's overall air-quality picture, not just a theoretical one.</p>
+<p>This is the same aggregate math used in the project's market-opportunity analysis &mdash; the environmental case and the business case scale together, because they're both driven by the same number of stations adopting the same device.</p>
+
+    <p style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)"><a href="detail-community-air-quality.html" class="btn btn-primary" style="display:inline-block">Read the full deep dive →</a></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h5>VaporGuard</h5>
+        <p style="font-size:.84rem;max-width:280px;">AI-monitored retrofit vapor recovery and leak detection for small and rural fuel stations. Student project prototype.</p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <a href="problem.html">Problem</a><a href="roi.html">ROI Calculator</a>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <a href="product.html">Specifications</a><a href="dashboard.html">Dashboard</a><a href="contact.html">Request Demo</a>
+      </div>
+      <div>
+        <h5>Sources</h5>
+        <div class="sources-list">
+          Fuel station count &amp; rural share &mdash; industry data, Business Standard, Dec 2025.<br/>
+          NGT vapor recovery directive &mdash; Dec 2021, CPCB/SPCB.<br/>
+          Evaporative loss range &mdash; industry technical literature; Statistics Canada retail outlet study, 2009 (proxy).<br/>
+          Benzene health effects on Indian pump attendants &mdash; peer-reviewed occupational health studies.<br/>
+          VOC reduction / Delhi VRS pump count &mdash; vapor recovery market research, 2025.<br/>
+          Fuel prices &mdash; Goodreturns / CarDekho, 18 Aug 2026.<br/>
+          Hardware price, subscription price, capture efficiency &mdash; our own business/engineering assumptions.
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> VaporGuard &mdash; Student project prototype, not a registered company.</span>
+      <span>Built for MSME Idea Hackathon 6.0 &mdash; Energy Efficiency</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
